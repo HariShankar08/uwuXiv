@@ -1,0 +1,16 @@
+{
+    "name": "uwuXiv",
+    "description": "Making papers readable. Finally.",
+    "version": "0.1.2",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://arxiv.org/html/*"],
+            "js": ["scripts/content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "images/icon.png"
+    }
+}
